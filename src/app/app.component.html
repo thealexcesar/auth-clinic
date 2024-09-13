@@ -1,3 +1,22 @@
-<div class="p-4 bg-gray-900 text-white">
-    <h1>Auth Clinic</h1>
-</div>
+<section class="auth-section">
+    <mat-card class="auth-card">
+        <mat-card-header>
+            <mat-card-title>Login</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form (ngSubmit)="onSubmit()"  #authForm="ngForm">
+                <mat-form-field appearance="outline" >
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="" type="email" required [(ngModel)]="login.username" name="email">
+                </mat-form-field>
+
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="" type="password" required [(ngModel)]="login.password" name="password">
+                </mat-form-field>
+
+                <button mat-raised-button color="primary">Enter</button>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</section>
