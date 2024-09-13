@@ -26,13 +26,11 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/icons/favicon.ico",
+              "src/assets/"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/assets/stylesheets/styles.sass"
             ],
             "scripts": []
           },
@@ -85,13 +83,11 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "sass",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/icons/favicon.ico",
+              "src/assets/"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/assets/stylesheets/styles.sass"
             ],
             "scripts": []
           }
